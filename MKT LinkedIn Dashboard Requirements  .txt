@@ -1,0 +1,100 @@
+﻿Marketing LinkedIn Dashboard Requirements
+Project Goal
+Build Version 1 of a simple LinkedIn Marketing Dashboard.
+This dashboard is for a product marketer learning how to use AI tools, Claude Code, GitHub, and Vercel. The dashboard should analyze a small set of LinkedIn posts from a personal LinkedIn profile.
+The dashboard should be useful for:
+1. Tracking my own LinkedIn post performance.
+2. Demonstrating my “Summer of AI GTM” learning project.
+3. Creating the foundation for a future customer-facing dashboard.
+Data Source
+The dashboard should use an existing CSV file in the GitHub repository as the default data source.
+CSV file location:
+linkedin-posts.csv
+The CSV is already populated with LinkedIn post data.
+Claude Code should inspect the CSV first before building the dashboard.
+Expected CSV columns, or close variations:
+* Date
+* Time
+* Title
+* URL
+* Impressions
+* Members Reached
+* Reactions
+* Comments
+* Shares
+The dashboard should not require full post text.
+The dashboard should not try to scrape LinkedIn post text from the URL.
+Use the Post Title, Topic, URL, and metrics to generate the dashboard and recommendations.
+Engagement Rate
+The CSV does not need to include an Engagement Rate column.
+The dashboard should calculate engagement rate automatically for each post using this formula:
+Engagement Rate = (Reactions + Comments + Shares) / Impressions × 100
+GitHub and Vercel Refresh
+The dashboard should refresh when I update the CSV file in GitHub and Vercel redeploys.
+Plain-English workflow:
+Update CSV in GitHub → Commit change → Vercel redeploys → Dashboard shows updated data
+Main Dashboard Sections
+1. Overall Summary
+Show simple top-level metrics:
+* Total impressions
+* Total reactions
+* Total comments
+* Total shares
+* Average engagement rate
+* Number of posts analyzed
+* Best performing post based on engagement rate
+* Most viewed post based on impressions
+* Top topic by average engagement rate
+2. Performance by Post
+Create a clear card or table layout for each post showing:
+* Date
+* Title
+* Topic
+* Impressions
+* Reactions
+* Comments
+* Shares
+* Calculated engagement rate
+* Link to the post
+3. Visuals
+Include interesting but simple visuals:
+* Summary metric cards
+* Circular stat cards or progress-style circles
+* Impressions by post graph
+* Engagement rate by post graph
+* Reactions, comments, and shares by post graph
+* Topic performance visual
+The visuals should be easy for a marketer to understand.
+4. Recommendations
+Add a recommendations section that summarizes:
+* Which post performed best by engagement rate
+* Which post had the most impressions
+* Which topic appears strongest
+* Which post had the most comments
+* What I should post more of
+* 3 suggested ideas for my next LinkedIn posts
+CSV Upload Feature
+Add a feature that allows the user to upload a new CSV file directly from the dashboard.
+Upload behavior:
+* The upload button should say: Upload New CSV
+* When the user selects a new CSV file, show a confirmation message before replacing the dashboard data.
+* The confirmation message should say: “This will delete and replace the current CSV data. Do you want to continue?”
+* The user must select OK before the new CSV is accepted.
+* If the user selects Cancel, do not replace the data.
+* After upload, the dashboard should refresh using the new CSV data.
+For Version 1, the upload feature should update the dashboard in the browser session only.
+It does not need to permanently replace the GitHub CSV yet.
+The README should clearly explain this.
+The README should also include a section called:
+Future Version: Replace GitHub CSV from Dashboard
+That section should explain that permanently replacing the GitHub CSV from the dashboard requires GitHub write access.
+Important Constraints
+* Keep this simple.
+* No login.
+* No database.
+* No LinkedIn API.
+* No scraping LinkedIn post text.
+* No complicated automation.
+* The CSV file in GitHub should be the default data source.
+* The dashboard upload feature can update the browser session only for Version 1.
+* Include a plain-English README explaining how to update the CSV weekly and how Vercel refreshes the dashboard.

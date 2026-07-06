@@ -1,0 +1,72 @@
+﻿Dashboard Look and Feel
+Style Direction
+The dashboard should feel professional but fun.
+It should look polished enough to share publicly as part of my “Summer of AI GTM” learning project.
+The design should feel:
+* Warm
+* Clean
+* Modern
+* Marketer-friendly
+* Friendly
+* Confident
+* Easy to read
+* Useful, not overly technical
+It should not feel like a plain spreadsheet or a dark corporate SaaS dashboard.
+Color Palette
+Use a summer-inspired color palette:
+* Maroon
+* Sienna
+* Cream
+* Mustard
+* Soft neutral backgrounds
+The design should use these colors in a tasteful way.
+Suggested usage:
+* Cream or soft neutral for the page background
+* Maroon for key headings or primary accents
+* Sienna for secondary accents
+* Mustard for highlights, badges, chart accents, or key callouts
+* Soft neutrals for cards and section backgrounds
+Visual Elements
+Use interesting but simple visual elements:
+* Summary cards
+* Rounded cards
+* Soft shadows
+* Circular stat cards
+* Progress-style circles
+* Simple graphs
+* Clear tables or post cards
+* Friendly empty states
+* Clear section dividers
+* Warm visual accents
+The dashboard should feel visual and engaging without being busy.
+Layout
+Recommended layout:
+1. Header section with dashboard title and short description.
+2. CSV upload area near the top.
+3. Overall Summary section with metric cards.
+4. Visual Performance section with charts.
+5. Performance by Post section with cards or a table.
+6. Recommendations section at the bottom.
+Tone of the Interface
+Use clear, friendly labels.
+Examples:
+* Overall Summary
+* Performance by Post
+* Topic Performance
+* Best Performing Post
+* Upload New CSV
+* Recommendations
+* What to Post Next
+Avoid developer-heavy language.
+Avoid labels that sound too technical.
+Avoid
+Avoid:
+* Plain spreadsheet look
+* Developer-heavy interface
+* Dark corporate SaaS styling
+* Overly complex menus
+* Tiny fonts
+* Too many charts
+* Anything too busy or hard to read
+* Anything childish or cartoonish
+The dashboard should feel like something a smart marketer would proudly share on LinkedIn.
